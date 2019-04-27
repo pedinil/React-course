@@ -29,15 +29,15 @@
         <script type="text/babel">
 
             
-            const Clock = () => {
+            const Clock = (props) => {
             const date=new Date();
             const thisYear=date.getFullYear();
-            return <h1 style={{ color:'red'}}>this year  {thisYear}</h1>
+            return <h1 style={{ color:props.color}}>this year  {thisYear}</h1>
             }
            
 
            
-            ReactDOM.render(<Clock />,document.getElementById('app'));
+            ReactDOM.render(<Clock color="red"/>,document.getElementById('app'));
         </script>
 
 </body>
