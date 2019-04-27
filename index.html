@@ -29,12 +29,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
     <script type="text/babel">
 
+    class Counter extends React.Component {
 
-            const Clock = (props) => {
-            const date=new Date();
-            const thisYear=date.getFullYear();
-            return <h1 style={{ color:props.color}}>this year  {thisYear}</h1>
-            }
+        render()
+        {
+
+            return <h1> The counter  component </h1>
+
+        }
+
+
+    }
+
+
+           
            
 
 
@@ -42,9 +50,7 @@
             {
 
                 return <div>
-                    <Clock color="red" />
-                    <Clock color="blue" />
-                    <Clock color="yellow" />
+                    <Counter />
 
                 </div>;
             }
