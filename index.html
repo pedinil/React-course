@@ -20,17 +20,16 @@
 
     <h1> hello world </h1>
 
-        <div id="app"></div>
-        <div id="app1"></div>
-        <div id="app2"></div>
+    <div id="app"></div>
 
-        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-        <script  src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
-        <script type="text/babel">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <script type="text/babel">
+
+
             const Clock = (props) => {
             const date=new Date();
             const thisYear=date.getFullYear();
@@ -38,12 +37,20 @@
             }
            
 
+
+            const App = () =>
+            {
+
+                return <div>
+                    <Clock color="red" />
+                    <Clock color="blue" />
+                    <Clock color="yellow" />
+
+                </div>;
+            }
            
-            ReactDOM.render(<Clock color="red"/>,document.getElementById('app'));
+            ReactDOM.render(<App />,document.getElementById('app'));
 
-            ReactDOM.render(<Clock color="blue"/>,document.getElementById('app1'));
-
-            ReactDOM.render(<Clock color="yellow"/>,document.getElementById('app2'));
 
 
         </script>
