@@ -31,10 +31,42 @@
 
     class Counter extends React.Component {
 
+        constructor()
+        {
+
+            super();
+            this.state = { 
+                count : 0
+            }
+
+        }
+
+
+handleSubtract()
+{
+
+    console.log('subtract');
+}
+
+
+handleAdd()
+{
+
+    console.log('adding');
+}
         render()
         {
 
-            return <h1> The counter  component </h1>
+            return <div>
+                    <button onClick={this.handleSubtract}>-</button>
+
+                    {this.state.count}
+
+                    <button onClick={this.handleAdd}>+</button>
+
+
+            </div>
+
 
         }
 
