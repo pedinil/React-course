@@ -1,0 +1,25 @@
+{
+  "name": "react-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack" : "webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedinil/React-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedinil/React-course/issues"
+  },
+  "homepage": "https://github.com/pedinil/React-course#readme",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
